@@ -32,6 +32,9 @@ class ThemeManager extends Component implements BootstrapInterface
     {
         $app->on(Application::EVENT_BEFORE_REQUEST, function () {
             // do something here
+            $this->selectedTheme = 'sb_cleanblog';//Yii::$app->settings->get('theme', 'general');
+            //Yii::setAlias('@theme', realpath(dirname(__FILE__)."/../../themes/$theme"));
+            Yii::setAlias('@theme', realpath(dirname(__FILE__)."/../themes/$this->selectedTheme"));
         });
     }
 
