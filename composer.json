@@ -21,7 +21,7 @@
         "ext-curl": "*"
     },
     "extra": {
-        "bootstrap": "paskuale75\\yii2themes\\ThemeManager"
+        "bootstrap": "paskuale75\\yii2themes\\src\\components\\ThemeManager"
     },
     "repositories": [
         {
